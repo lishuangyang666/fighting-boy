@@ -1,0 +1,29 @@
+<p>main-child-one works!</p>
+<!-- 单插槽 -->
+<ng-content></ng-content>
+<!-- 多插槽 -->
+ <div>
+    <div>
+         <ng-content select="h1"></ng-content>
+      </div>
+       <div>
+          <ng-content select=".partB"></ng-content>
+     </div>
+     <div>
+         <ng-content select="span"></ng-content>
+     </div>
+ </div>
+ <!-- 条件插槽 -->
+ <div *ngIf="false">
+  <ng-container *ngIf="childRef" [ngTemplateOutlet]="childRef.templateRef"></ng-container>
+</div>
+
+<div (click)="clickChild()">
+  <span>childComponet</span>
+</div>
+
+
+<div style="background-color: darkcyan;">{{recevieParentData}}</div>
+
+
+

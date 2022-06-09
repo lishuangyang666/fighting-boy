@@ -1,0 +1,9 @@
+<div style="background-color: aqua;height: 200px;">
+  <h2>parent</h2>
+  <h3>{{dataFromChild}}</h3>
+  <app-child1 #child [bindProp]="parentValue" [bindParent]="this" (bindParentEvent)="revieceChildEvent($event)"></app-child1>
+  <app-child2></app-child2>
+  <button (click)="child.clickStart()">clickStart</button>
+  <button (click)="child.clickEnd()">clickEnd</button>
+</div>
+<ng-template #Container></ng-template>

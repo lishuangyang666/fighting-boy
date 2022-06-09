@@ -1,0 +1,113 @@
+{
+    "questionId": 142,
+    "unRead": 0,
+    "questionDesc": "What is the business priority level for your initiative?",
+    "questionNbr": "4",
+    "questionTooltip": "Only select High if this initiative is needed to prevent a critical impact to the company's operations and/or to our employees",
+    "questionCorpoFuncType": null,
+    "validation": {
+        "questionMandInd": "Y"
+    },
+    "questionCollectionInfo": null,
+    "value": [
+        {
+            "responseId": 0,
+            "value": "High"
+        }
+    ],
+    "uploadValue": [],
+    "identification": "casesummary for icon two",
+    "assigncolumn": "CaseRiskScore",
+    "questionType": "Single Choice",
+    "sectionId": 2,
+    "sectionNm": "Basic information",
+    "flag": "R-5",
+    "dependancy": null,
+    "questionAttribute": [
+        {
+            "questionAttrId": 683,
+            "questionAttrValue": "High",
+            "questionAutoResponse": "The selection of High needs to be confirmed with your organization's leadership or MD sponsor. Obtain an approval on this level of priority from your organization's leadership or MD sponsor via email and upload it here.<br/>If no email is uploaded, the priority level will change to Standard.",
+            "questionAutoResponseType": "Upload",
+            "questionAutoResponseValue": "",
+            "caseCloseInd": "",
+            "questionRiskScore": "R-5",
+            "onlyChoice": false,
+            "responseUploadValue": [
+                {
+                    "attachmentId": 40,
+                    "caseId": 2100,
+                    "questionId": 142,
+                    "questionOption": null,
+                    "url": null,
+                    "attachmentNm": "e3257e8f-f9ec-4a3a-8abd-4b970a37f518.xlsx",
+                    "attachmentSize": 0,
+                    "attachmentAuth": null,
+                    "createdAt": "2022-03-30T03:04:02.103",
+                    "createdBy": "T135542.DS.001",
+                    "updatedAt": "2022-03-30T03:04:02.103",
+                    "updatedBy": "T135542.DS.001",
+                    "awsAttachmentNm": null,
+                    "deleteFlag": null,
+                    "uploadFlag": null,
+                    "questionAttrId": 683,
+                    "duplicateNameIndex": null,
+                    "describe": "ffd",
+                    "teamName": null,
+                    "attachmentType": null,
+                    "renameAttachmentNm": "ebce6a06-9734-49ea-b60b-9990d649904fe3257e8f-f9ec-4a3a-8abd-4b970a37f518.xlsx",
+                    "guid": "00000000-0000-0000-0000-000000000000",
+                    "isUpdatedInd": false
+                }
+            ]
+        },
+        {
+            "questionAttrId": 684,
+            "questionAttrValue": "Standard",
+            "questionAutoResponse": null,
+            "questionAutoResponseType": null,
+            "questionAutoResponseValue": "",
+            "caseCloseInd": "",
+            "questionRiskScore": "W-0",
+            "onlyChoice": false,
+            "responseUploadValue": [
+                {
+                    "attachmentId": 40,
+                    "caseId": 2100,
+                    "questionId": 142,
+                    "questionOption": null,
+                    "url": null,
+                    "attachmentNm": "e3257e8f-f9ec-4a3a-8abd-4b970a37f518.xlsx",
+                    "attachmentSize": 0,
+                    "attachmentAuth": null,
+                    "createdAt": "2022-03-30T03:04:02.103",
+                    "createdBy": "T135542.DS.001",
+                    "updatedAt": "2022-03-30T03:04:02.103",
+                    "updatedBy": "T135542.DS.001",
+                    "awsAttachmentNm": null,
+                    "deleteFlag": null,
+                    "uploadFlag": null,
+                    "questionAttrId": 683,
+                    "duplicateNameIndex": null,
+                    "describe": "ffd",
+                    "teamName": null,
+                    "attachmentType": null,
+                    "renameAttachmentNm": "ebce6a06-9734-49ea-b60b-9990d649904fe3257e8f-f9ec-4a3a-8abd-4b970a37f518.xlsx",
+                    "guid": "00000000-0000-0000-0000-000000000000",
+                    "isUpdatedInd": false
+                }
+            ]
+        }
+    ],
+    "isSelectDiscussion": true,
+    "isAssignee": true,
+    "discussionDisplay": true,
+    "discussionHasActived": false,
+    "highLightPurple": false,
+    "hadDisplay": true,
+    "disabled": false,
+    "displayedQuestion": true,
+    "showAutoResponse": true,
+    "autoResponseTextDisplay": true,
+    "ResponseDisplayType": "Upload"
+}

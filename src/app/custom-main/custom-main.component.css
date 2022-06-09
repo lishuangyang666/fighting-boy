@@ -1,0 +1,12 @@
+.saveable{
+  height: 20px;
+  background-color: black;
+}
+.modified{
+  height: 20px;
+  background-color: blue;
+}
+.special{
+  height: 20px;
+  background-color: red;
+}

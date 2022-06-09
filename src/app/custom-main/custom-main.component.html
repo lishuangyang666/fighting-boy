@@ -1,0 +1,79 @@
+<div>please input some words!!{{1+2}}</div>
+<input type="text" [(ngModel)]="inputData" >
+<div>{{mainParentTitle}}</div>
+
+<!-- 挂载子组件，父子组件传值 -->
+<app-main-child-one [mainInput]="inputData" (revieceChild)="updateParentTitle($event)">
+  <!-- 单插槽内容 -->
+  <div>单插槽</div>
+  <!-- 多插槽内容 -->
+  <div>多插槽start</div>
+    <h1>PartA--start</h1>
+    <div class="partB">part in the child one</div>
+    <span>PartA--end</span>
+  <!-- 条件插槽 -->
+  <ng-template appAppChildRef>
+    <div>this is childRef content</div>
+  </ng-template>
+</app-main-child-one>
+
+
+<!-- 模板 -->
+<div style="background-color: aquamarine; height: 200px;">
+    <div style="background-color: bisque;height: 20px;margin-top: 20px;" *ngFor="let item of myValue">{{item.name}}
+    <button style="margin:0px 20px;" (click)="addClick()">add</button>
+    <button style="margin:0px 20px;"(click)="deleteClick(item)">delete</button>
+    <button style="margin:0px 20px;"(click)="showClick(item)">show</button>
+    <button style="margin:0px 20px;"(click)="tempClick(temp)">temp</button>
+    </div>
+    <div style="margin-top: 20px; background-color: cadetblue; height: 16px;">show is :{{showValue}}</div>
+    <div #temp>aaaa</div>
+</div>
+<!-- 属性指令 -->
+  <!-- ngclass -->
+  <div [ngClass]="currentClasses">currentClass</div>
+  <!-- ngStyle -->
+  <div [ngStyle]="currentStyle">currentStyle</div>
+  <!-- ngModel -->
+  <input type="text" [(ngModel)]="inputData2" >
+<!-- 结构指令 -->
+  <!-- ngIf -->
+  <div *ngIf="testIf; else testElse">test if</div>
+  <ng-template #testElse>
+      <div >test else</div>
+  </ng-template>
+
+  <!-- ngFor -->
+  <div style="background-color: bisque;height: 20px;margin-top: 20px;" *ngFor="let item of myValue">{{item.name}}
+    </div>
+  <!-- ngSwhich -->
+  <div style="background-color: bisque;height: 20px;margin-top: 20px;" *ngFor="let item of myValue">{{item.name}}
+    <div [ngSwitch]="item.name">
+      <div *ngSwitchCase="'Jack'" >
+          <span>switch-JACK</span>
+      </div>
+      <div *ngSwitchCase="'Timi'" >
+        <span>switch-Timi</span>
+      </div>
+      <div *ngSwitchCase="'Curry'" >
+        <span>switch-Curry</span>
+      </div>
+      <div *ngSwitchCase="'Jaly'" >
+        <span>switch-Jaly</span>
+      </div>
+      <div *ngSwitchDefault   >
+        <span>switch-DEF</span>
+      </div>
+    </div>
+  </div>
+<!-- 自定义指令 -->
+  <div style="margin-top: 20px;" appCostom>test no input directive</div>
+
+  <div style="margin-top: 20px;" appCustomInput [data]="color" [dafalut] = "'blue'">test has input directive</div>
+
+
+
+
+
+
+
